@@ -1,0 +1,42 @@
+/* BUTTONS */
+
+.btn-main {
+  background-color: $color-primary;
+  color: $white;
+  font-weight: $font-weight-400;
+  letter-spacing: 0.04em;
+  margin-top: 20px;
+  padding: 8px 15px !important;
+  border: 1px solid $transparent;
+  transition: background-color 1s;
+  &:hover {
+    background-color: $yellow;
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+
+
+.btn-second {
+  background-color: $white;
+  color: $color-tertiary;
+  float: left;
+  font-weight: $font-weight-400;
+  letter-spacing: 0.04em;
+  line-height: 20px;
+  padding: 8px 15px !important;
+  border: 1px solid $transparent;
+  transition: background-color 2s;
+  &:hover {
+    background-color: $transparent;
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $white;
+  }
+}
+
+.btn-padding {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

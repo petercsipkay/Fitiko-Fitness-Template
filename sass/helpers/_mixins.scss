@@ -1,0 +1,32 @@
+// MIXINS
+
+// Cross-browser mixins border-radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Cross-browser mixins box-shadow
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+@mixin skewed {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: skewY(-2deg);
+}
+
+// Media querys mixin
+@mixin respond-to($media) {
+	@media only screen and #{$media} {
+		@content;
+	}
+}

@@ -1,0 +1,46 @@
+//========================================================
+//                     Variables
+//=========================================================
+
+
+// Fonts
+$font-stack-primary: 'Montserrat', sans-serif;
+$font-stack-secondary: 'Raleway', sans-serif;
+
+$font-size: 14px;
+$font-size-17: 17px;
+$font-size-25: 25px;
+$font-size-60: 60px;
+
+$font-weight-100: 100;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+
+// Color
+$color-primary: #73C6C8;
+$color-secondary: rgba(115, 198, 200, 0.71);
+$color-tertiary: #3BB4C1;
+
+$pink: #cd7399;
+$pink-2: rgba(205, 115, 153, 0.9);
+
+$yellow: #e8bc6f;
+$yellow-2: rgba(232, 188, 111, 0.9);
+
+$purple: #b78bcf;
+$purple-2: rgba(183, 139, 207, 0.9);
+
+$white: #ffffff;
+$black: #777;
+$gray: #878a9a;
+$transparent: transparent;
+
+$font-color: #555;
+$section-color: #f5f6f9;
+
+// Media Query Size
+$mini: "(min-width: 0px) and (max-width: 360px)";
+$phone: "(min-width: 360px) and (max-width: 768px)";
+$destop: "(min-width: 768px) and (max-width: 1024px)";

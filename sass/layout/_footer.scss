@@ -1,0 +1,70 @@
+/* FOOTER */
+
+footer {
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, $color-primary, $color-tertiary) repeat scroll 0 0;
+  padding: 50px 0;
+}
+
+.socialfooter a {
+  color: $white;
+  display: inline-block;
+  font-size: 22px;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.copyright {
+  color: $white;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+
+.copyright span {
+  color: $white;
+}
+
+.top .fa.fa-chevron-up {
+  color: #fff;
+  margin-top: 7px;
+}
+
+.socialfooter .fa {
+  width: 50px;
+  height: 50px;
+  color: $white;
+  @include border-radius(50%);
+  border: 2px solid $white;
+  padding: 13px;
+  font-size: 20px;
+  margin: 10px;
+  transition: all 1s;
+  @include respond-to($mini) {
+    font-size: 16px !important;
+    margin: 0px !important;
+    width: 40px;
+    padding: 9px !important;
+    height: 40px;
+  }
+}
+
+.socialfooter .fa:hover {
+  color: $color-primary;
+  background: $white;
+}
+
+.top {
+  background-color: $color-primary;
+
+  @include border-radius(5px);
+
+  color: $white;
+  bottom: 10px;
+  display: none;
+  height: 30px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 30px;
+  z-index: 10000;
+  display: inline;
+}

@@ -1,0 +1,47 @@
+/* Tables */
+
+th {
+  text-align: center;
+}
+
+tr {
+  height: 60px;
+}
+
+span.days {
+  color: $gray;
+}
+
+td.hour span {
+  color: $gray;
+  vertical-align: middle !important;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  vertical-align: middle;
+}
+
+.class-color-1 {
+  background-color: $pink;
+  color: $white;
+  vertical-align: middle !important;
+  transition: background-color 1s;
+}
+
+.class-color-2 {
+  background-color: $yellow;
+  color: $white;
+  vertical-align: middle !important;
+  transition: background-color 1s;
+}
+
+.class-color-3 {
+  background-color: $purple;
+  color: $white;
+  vertical-align: middle !important;
+  transition: background-color 1s;
+}
+
+.class-color-1:hover, .class-color-2:hover, .class-color-3:hover {
+  background-color: $color-primary;
+}

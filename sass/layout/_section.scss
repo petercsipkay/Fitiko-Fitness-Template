@@ -1,0 +1,282 @@
+/* ALL SECTIONS */
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $section-color;
+}
+
+/* SECTION ABOUT BG */
+
+section.about-bg {
+  background: $color-primary;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.about h3 {
+  font-weight: $font-weight-100;
+  margin-bottom: 20px;
+  span {
+    color: $color-primary;
+  }
+}
+
+
+.about-bg p {
+  color: $white;
+}
+
+/* SECTION CLASSES */
+
+section.classes-bg {
+  background: url("../images/classes-bg.jpg") 50% 0 repeat fixed;
+
+  @extend .parallax;
+  &::before {
+    background: $pink-2;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  h2 {
+    color: $white;
+  }
+}
+
+
+h3.counter {
+  color: $white;
+  font-size: $font-size-60 !important;
+  font-family: $font-stack-primary;
+}
+
+h3.counter-text {
+  color: $white;
+  text-transform: uppercase;
+  font-size: $font-size-25;
+  margin-top: 20px;
+}
+
+.classes-bg p {
+  color: $white;
+  font-size: $font-size-60;
+}
+
+.classes-bg h5 {
+  color: $white;
+  line-height: 20px;
+}
+
+.classes-post {
+  background: #fff none repeat scroll 0 0;
+  padding: 9px;
+  margin-bottom: 10px;
+
+  @include border-radius(5px);
+  @include box-shadow(1px 6px 5px #eee);
+}
+
+.classes-post img {
+  width: 100%;
+}
+
+.classes-post img::before {
+  background: rgba(0, 0, 0, 0) linear-gradient(90deg, $color-secondary, $color-tertiary) repeat scroll 0 0;
+}
+
+.classes-content {
+  margin: auto;
+  padding: 14px 0;
+  width: 100%;
+  color: $white;
+  span {
+  text-transform: uppercase;
+  font-weight: 500;
+  }
+}
+
+/* SECTION EVENT */
+
+section.customer {
+  background: url("../images/customer.jpg") 50% 0 repeat fixed;
+
+  @extend .parallax;
+  &::before {
+    background: $purple-2;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+
+.customer h2 {
+  color: $white;
+}
+
+.customer p {
+  color: $white;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+strong {
+  color: $white;
+}
+
+.customer .item {
+  min-height: 200px;
+}
+
+.carousel-indicators {
+  bottom: -20px;
+}
+
+/* SECTION PRICE */
+
+section.price {
+  padding-bottom: 160px;
+}
+
+.price-title {
+  color: $white;
+  font-size: 17px;
+  font-weight: $font-weight-600;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.inner-box {
+  background: $white none repeat scroll 0 0;
+  border: 1px solid #e2e8eb;
+  margin: 20px auto 0;
+  max-width: 320px;
+  padding: 0 0 30px;
+  position: relative;
+
+  @include border-radius(5px);
+  @include box-shadow(1px 6px 5px #eee);
+}
+
+.price-stats li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-family: $font-stack-primary;
+}
+
+.price-stats li:first-child {
+  margin-top: 30px;
+}
+
+.price-stats li:last-child {
+  margin-bottom: 30px;
+}
+
+/* SECTION OPEN */
+
+section.open {
+  background: url("../images/open.jpg") 50% 0 repeat fixed;
+
+  @extend .parallax;
+  &::before {
+    background: $yellow-2;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.open {
+  h2{
+    color: $white;
+  }
+  p {
+    color: $white;
+    font-size: $font-size-60;
+  }
+  h5 {
+    color: $white;
+    line-height: 20px;
+  }
+}
+
+/* SECTION CONTACT */
+
+.contact-bg {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px;
+  min-height: 550px;
+  margin-bottom: 10px;
+
+  @include border-radius(5px);
+  @include box-shadow(1px 6px 5px #eee);
+}
+
+.team-bg {
+  background: #fff none repeat scroll 0 0;
+  padding: 30px;
+  min-height: 550px;
+  margin-bottom: 10px;
+  @include border-radius(5px);
+  @include box-shadow(1px 6px 5px #eee);
+  @include respond-to($mini) {
+    margin-top: 10px;
+  }
+}
+
+.adderss {
+  background: $color-primary;
+  bottom: 0;
+  color: #fff;
+  height: 200px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding-top: 45px;
+}
+
+.team-img {
+  position: relative;
+}
+
+.contact-form .form-control {
+  background: #f2f2f2 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 60px;
+}
+
+textarea.form-control {
+  height: 194px !important;
+}
+
+.team-image {
+  width: 100%;
+  @include border-radius(2px);
+  @include respond-to($phone) {
+    margin-bottom: 150px;
+  }
+  @include respond-to($mini) {
+    margin-bottom: 150px;
+  }
+}
